@@ -1,0 +1,338 @@
+body {
+  font-family: "Courier New";
+}
+
+.header {
+  background-image: url("../../resources/plane.jpg");
+  height: 500px;
+  background-position: inherit;
+  background-size: 100% auto;
+}
+
+.header_logo {
+  font-size: 38px;
+  padding: 20px 0px 0px 50px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.header .navbar {
+  background: transparent;
+  padding-top: 0;
+  padding-bottom: 0;
+  color: #fff;
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+}
+
+.header_nav {
+  text-align: right;
+  margin-top: -45px;
+  padding-right: 40px;
+}
+
+.header_nav-list li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.header_nav-list {
+  color: white;
+  font-size: 22px;
+}
+
+.header_language {
+  text-align: right;
+  margin-top: -80px;
+  margin-right: 50px;
+}
+
+.dropdown_triger {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown_list {
+  display: none;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+.dropdown_list a {
+  color: black;
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+}
+
+.dropdown_list li {
+  list-style: none;
+}
+
+.dropdown_list a:hover {
+  background-color: #7b98c4;
+}
+
+.dropdown:hover .dropdown_list {
+  display: block;
+}
+
+.banner_button {
+  position: absolute;
+  background-color: #fb3640;
+  border-radius: 20px;
+  color: white;
+  padding: 13px 60px;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+  height: 20px;
+  text-decoration: none;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.title-h3 {
+  font-size: 25px;
+  color: #247ba0;
+  margin: 50px 20px 15px 100px;
+}
+
+.title-h3::after {
+  content: "";
+  position: absolute;
+  width: 1200px;
+  height: 1px;
+  background-color: black;
+  margin: 15px 10px 0px 10px;
+}
+
+.offers {
+  margin: 0px 0px 0px 20px;
+  display: flex;
+  list-style: none;
+}
+
+.body-page {
+  padding-bottom: 50px;
+}
+
+.offers li {
+  float: left;
+  position: relative;
+}
+
+.offer_price {
+  color: #247ba0;
+  text-align: right;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: -90px;
+  margin-left: 180px;
+}
+
+.offer_title {
+  color: #ffffff;
+  text-align: right;
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: -130px;
+  margin-left: 40px;
+}
+
+.offers img {
+  border: 3px solid #0a2463;
+  border-radius: 28px;
+  width: 380px;
+  height: 320px;
+  margin: 30px;
+  object-fit: cover;
+}
+
+.offer_title,
+.offer_price {
+  position: absolute;
+}
+
+.banner {
+  text-align: left;
+  color: white;
+  position: absolute;
+  top: 150px;
+  left: 50px;
+}
+
+.banner_subtitle {
+  width: 60%;
+}
+
+.footer {
+  height: 200px;
+  padding-top: 20px;
+
+  background-color: #0a2463;
+  color: #4b4c4d;
+}
+
+.footer ul {
+  padding-left: 20px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.footer ul li {
+  padding: 0 15px;
+  float: left;
+  position: relative;
+}
+
+.footer_description {
+  color: white;
+  width: 300px;
+}
+
+.footer_subnav {
+  color: white;
+}
+
+.footer ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer ul a:hover {
+  opacity: 1;
+}
+
+.footer_nav_title {
+  color: #f33541;
+}
+
+.footer_inner {
+  margin-left: 30px;
+}
+
+@media (max-width: 640px) {
+  .header {
+    height: 270px;
+  }
+
+  .header_logo {
+    font-size: 25px;
+    padding: 10px 0px 0px 20px;
+  }
+
+  .header_nav-list {
+    color: white;
+    font-size: 15px;
+  }
+
+  .header_nav {
+    margin-top: 5px;
+    padding-right: 10px;
+  }
+
+  .header_language {
+    margin-top: -70px;
+    margin-right: 20px;
+  }
+
+  .header_nav-list li {
+    margin-right: 5px;
+  }
+
+  .offers img {
+    border-radius: 15px;
+    width: 100px;
+    height: 80px;
+    margin: 5px;
+  }
+
+  .offers {
+    padding: 0;
+  }
+
+  .offer_title {
+    font-size: 11px;
+    margin-top: -80px;
+    margin-left: 5px;
+    width: 80px;
+  }
+
+  .banner_button {
+    border-radius: 20px;
+    padding: 10px 40px;
+    font-size: 15px;
+    height: 15px;
+    margin-top: 10px;
+  }
+
+  .banner {
+    color: white;
+    position: absolute;
+    top: 100px;
+    left: 20px;
+  }
+
+  .banner_title {
+    font-size: 18px;
+    width: 200px;
+  }
+
+  .banner_subtitle {
+    display: none;
+  }
+
+  .title-h3 {
+    font-size: 17px;
+    color: #247ba0;
+    margin: 30px 20px 15px 10px;
+  }
+
+  .title-h3::after {
+    width: 00px;
+    margin: 15px 10px 0px 10px;
+  }
+
+  .footer {
+    height: 60px;
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+
+  .footer_nav_title {
+    font-size: 12px;
+    padding-top: 10px;
+  }
+
+  .footer_subnav,
+  .footer_description,
+  .offer_price {
+    display: none;
+  }
+
+  .body-page {
+    padding-bottom: 5px;
+  }
+
+  .footer_inner {
+    margin-left: 5px;
+  }
+}
